@@ -1,0 +1,80 @@
+
+body {
+	font-family: Arial;
+}
+
+.form-wrap * {
+	box-sizing: border-box;
+}
+.form-wrap {
+	margin: 50px auto 20px auto;	
+	max-width: 400px;
+	border: 1px solid #B8B8B8;
+	-webkit-box-shadow: 0 0 5px 0 #B8B8B8;
+	box-shadow: 0 0 5px 0 #B8B8B8;
+	padding: 30px;
+	border-radius: 10px;
+}
+.my-form__item {
+	margin-bottom: 20px;
+}
+.form-wrap label {
+	display: block;
+	margin-bottom: 5px;
+}
+.field {
+	padding: 10px 15px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.field_error {
+	border: 1px solid red;
+}
+.btn {
+	padding: 10px 20px;
+
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.btn_submit { 
+	background-color: #ffdb4d; 
+}
+.btn_submit:hover {
+	background-color: #ffd633; 
+}
+
+.hint {
+	color: #909090;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.result-container {
+	border: 3px solid gray;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	color: gray;
+}
+
+
+.result-container.success {
+	border: 3px solid green;
+	color: green;	
+}
+.result-container.error {
+	border: 3px solid red;
+	color: red;	
+}
+.result-container.progress {
+	border: 3px solid blue;
+	color: blue;	
+}
+.field_txt { }
+.field_email { }
+.field_phone { }
+.btn_submit { }

@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>nodejs task</title>
+		
+	<meta name="description" content='' />
+	<meta name="keywords" content='' />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+
+	<div class="form-wrap">
+
+		<form id="myForm" class="my-form" action="">
+			<div class="my-form__item">
+				<label for="fio" class="caption">Фамилия Имя Отчество:</label>	
+				<input id="fio" type="text" name="fio" class="field field_txt" value="">
+				<div class="hint">Например: Иванов Иван Иванович</div>
+			</div>
+			<div class="my-form__item">
+				<label for="email">Email:</label>	
+				<input id="email" type="email" name="email" class="field field_email" value="">	
+				<div class="hint">Только в доменах ya.ru, yandex.ru, yandex.ua, yandex.by, yandex.kz, yandex.com</div>
+			</div>
+			<div class="my-form__item">
+				<label for="phone">Телефон:</label>	
+				<input id="phone" type="tel" name="phone" class="field field_phone" value="">
+				<div class="hint">Формат: +7(999)999-99-99, при это сумма цифр менее 30</div>
+			</div>
+			<div class="my-form__item">
+				<input type="button" id="submitButton" onclick="MyForm.submit({ elements: '#myForm .field', type: 'progress' });"  class="btn btn_submit" value="Отправить">	
+			</div>
+		</form>
+
+	</div>
+
+	<div id="resultContainer" class="result-container">
+		Вывод результата
+	</div>
+
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
